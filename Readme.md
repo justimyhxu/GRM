@@ -16,21 +16,25 @@
 ## Results
 
 ### Blender Demo
-https://github.com/justimyhxu/GRM/assets/29980330/da2fc522-bc19-43f3-b7f8-29e3d4819a17
+https://github.com/justimyhxu/GRM/assets/29980330/0cf713aa-ba87-4a15-a8ee-1b0da643cb3c
+
 
 
 ### Sparse-view Reconstruction
-https://github.com/justimyhxu/GRM/assets/29980330/bc2d2937-d915-46f2-a6a4-38cc656439a2
+https://github.com/justimyhxu/GRM/assets/29980330/d436bca9-ddf9-4507-aed3-828fd6508ec3
 
 
 
 ### Image-to-3D
-https://github.com/justimyhxu/GRM/assets/29980330/61aefc2a-a0a5-4161-ab49-8caebd1624d9
+https://github.com/justimyhxu/GRM/assets/29980330/23f6f217-61ba-4128-b99f-c89f9b708353
+
+
 
 
 
 ### Text-to-3D
-https://github.com/justimyhxu/GRM/assets/29980330/3f10ede8-4be3-4268-9d47-c0e5533d3254
+https://github.com/justimyhxu/GRM/assets/29980330/034a8a3d-a0ff-4058-b279-a00ab8c69764
+
 
 
 
