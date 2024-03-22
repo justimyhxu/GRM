@@ -8,7 +8,7 @@
 
 [[Paper]()]
 [[Project Page](https://justimyhxu.github.io/projects/grm)]
-[[Blender Demo](https://github.com/justimyhxu/GRM/assets/29980330/da2fc522-bc19-43f3-b7f8-29e3d4819a17)]
+[[Blender Demo](https://github.com/justimyhxu/GRM/assets/29980330/0cf713aa-ba87-4a15-a8ee-1b0da643cb3c)]
 [[HF Demo]()]
 
 ### The code and models will be released soon!
