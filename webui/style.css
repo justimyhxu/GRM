@@ -1,0 +1,35 @@
+.force-hide-container {
+    margin: 0;
+    box-shadow: none;
+    --block-border-width: 0;
+    background: transparent;
+    padding: 0;
+    overflow: visible;
+}
+
+.svelte-sfqy0y {
+    display: flex;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    gap: 0;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    overflow-y: hidden;
+}
+
+.custom-spacing {
+    padding: 10px;
+    gap: 20px;
+    flex-grow: 0 !important;
+}
+
+.unequal-height {
+    align-items: flex-end;
+}
+
+.tool{
+    max-width: 40px;
+    min-width: 40px !important;
+}
