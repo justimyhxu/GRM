@@ -34,7 +34,7 @@ Pretrained weights can be downloaded from [Hugging Face](https://huggingface.co/
 ```bash
 # Example
 mkdir checkpoints && cd checkpoints
-wget https://huggingface.co/justimyhxu/GRM/blob/main/grm_u.pth && cd ..
+wget https://huggingface.co/justimyhxu/GRM/resolve/main/grm_u.pth -O grm_u.pth && cd ..
 ```
 
 Note that we provide three checkpoints for use. We use the OpenCV coordinate system.
