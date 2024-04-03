@@ -47,9 +47,10 @@ Note that we provide three checkpoints for use. We use the OpenCV coordinate sys
 
 
 Besides, you need to download checkpoints for [SV3D](https://huggingface.co/stabilityai/sv3d/tree/main).
+You also need to login on huggingface and get an authorization token. 
 ```bash
 cd checkpoints
-wget https://huggingface.co/stabilityai/sv3d/blob/main/sv3d_p.safetensors && cd ..
+wget --header="Authorization: Bearer HF_TOKEN" https://huggingface.co/stabilityai/sv3d/resolve/main/sv3d_p.safetensors -O sv3d_p.safetensors && cd ..
 ```
 
 
