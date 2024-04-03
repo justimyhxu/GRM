@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sgm"
+dynamic = ["version"]
+description = "Stability Generative Models"
+readme = "README.md"
+license-files = { paths = ["LICENSE-CODE"] }
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/Stability-AI/generative-models"
+
+[tool.hatch.version]
+path = "sgm/__init__.py"
+
+[tool.hatch.build]
+# This needs to be explicitly set so the configuration files
+# grafted into the `sgm` directory get included in the wheel's
+# RECORD file.
+include = [
+    "sgm",
+]
+# The force-include configurations below make Hatch copy
+# the configs/ directory (containing the various YAML files required
+# to generatively model) into the source distribution and the wheel.
+
+[tool.hatch.build.targets.sdist.force-include]
+"./configs" = "sgm/configs"
+
+[tool.hatch.build.targets.wheel.force-include]
+"./configs" = "sgm/configs"
+
+[tool.hatch.envs.ci]
+skip-install = false
+
+dependencies = [
+    "pytest"
+]
+
+[tool.hatch.envs.ci.scripts]
+test-inference = [
+    "pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2+cu118 --index-url https://download.pytorch.org/whl/cu118",
+    "pip install -r requirements/pt2.txt",    
+    "pytest -v tests/inference/test_inference.py {args}",
+]
