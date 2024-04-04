@@ -41,3 +41,4 @@ xatlas
 fast-simplification
 git+https://github.com/NVlabs/nvdiffrast.git@c5caf7bdb8a2448acc491a9faa47753972edd380
 fpsample
+streamlit
