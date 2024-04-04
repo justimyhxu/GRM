@@ -32,9 +32,12 @@ cd third_party/diff-gaussian-rasterization &&  pip install -e .
 ## Pretrained weights
 Pretrained weights can be downloaded from [Hugging Face](https://huggingface.co/justimyhxu/GRM/tree/main).
 ```bash
-# Example
+# Download weights
 mkdir checkpoints && cd checkpoints
-wget https://huggingface.co/justimyhxu/GRM/blob/main/grm_u.pth && cd ..
+wget https://huggingface.co/justimyhxu/GRM/resolve/main/grm_u.pth -O grm_u.pth
+wget https://huggingface.co/justimyhxu/GRM/resolve/main/grm_r.pth -O grm_r.pth
+wget https://huggingface.co/justimyhxu/GRM/resolve/main/grm_zero123plus.pth -O grm_zero123plus.pth
+cd ..
 ```
 
 Note that we provide three checkpoints for use. We use the OpenCV coordinate system.
@@ -47,9 +50,10 @@ Note that we provide three checkpoints for use. We use the OpenCV coordinate sys
 
 
 Besides, you need to download checkpoints for [SV3D](https://huggingface.co/stabilityai/sv3d/tree/main).
+You also need to login on huggingface and get an authorization token. 
 ```bash
 cd checkpoints
-wget https://huggingface.co/stabilityai/sv3d/blob/main/sv3d_p.safetensors && cd ..
+wget --header="Authorization: Bearer HF_TOKEN" https://huggingface.co/stabilityai/sv3d/resolve/main/sv3d_p.safetensors -O sv3d_p.safetensors && cd ..
 ```
 
 
