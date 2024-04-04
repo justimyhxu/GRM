@@ -224,9 +224,10 @@ def images2gaussian(images, c2ws, fxfycxcy, model, gs_path, video_path, mesh_pat
     camera_path = generate_cameras(r=2.7, num_cameras=120, pitch=np.deg2rad(20))
 
     with torch.no_grad():
+        autocast_dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
         with torch.cuda.amp.autocast(
                 enabled=True,
-                dtype=torch.bfloat16 
+                dtype=autocast_dtype
         ):
             images = images.to(device, dtype=torch.float32, non_blocking=True)
             c2ws = c2ws.to(device, dtype=torch.float32, non_blocking=True)
